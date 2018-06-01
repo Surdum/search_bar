@@ -47,9 +47,7 @@ def bar(message: telebot.types.Message):
         bot.send_message(message.chat.id,
                          'Ближайший к Вам бар, "' + bar[0] +
                          '", находится по адресу: ' + bar[1] +
-                         '.\nТелефон: ' + bar[2] +
-                         '\nExperimental: \n' +
-                         'Пешком напролом ' + str(bar[5]) + '-' + str(int(bar[5] * 1.5)) + ' мин')
+                         '.\nТелефон: ' + bar[2]
         bot.send_location(message.chat.id, bar[3], bar[4])
         isBars = False
 
